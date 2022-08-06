@@ -20,8 +20,8 @@ public class ServiceImp implements ServiceInt {
 
 	@Override
 	public List<Empolyee> saveAllData(List<Empolyee> empolyee) {
-		// TODO Auto-generated method stub
-		return null;
+		List<Empolyee> saveAll = repositary.saveAll(empolyee);
+		return saveAll;
 	}
 
 	@Override
