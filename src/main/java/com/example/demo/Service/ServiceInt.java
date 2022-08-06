@@ -8,7 +8,7 @@ public interface ServiceInt {
 public Empolyee savedata(Empolyee empolyee);
 public List<Empolyee> saveAllData(List<Empolyee> empolyee);
 public Empolyee FindById(int id);
-public List<Empolyee> getall(Empolyee empolyee);
+public List<Empolyee> getall();
 public Empolyee FindByAgeLessThanOrEqual(String age);
 public Empolyee Logingcheck(String name, int id);
 public void deleteByID(int id);

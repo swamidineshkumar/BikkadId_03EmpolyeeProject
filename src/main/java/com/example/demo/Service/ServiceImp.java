@@ -26,14 +26,15 @@ public class ServiceImp implements ServiceInt {
 
 	@Override
 	public Empolyee FindById(int id) {
-		// TODO Auto-generated method stub
-		return null;
+Empolyee empolyee = repositary.findById(id).get();
+
+		return empolyee;
 	}
 
 	@Override
-	public List<Empolyee> getall(Empolyee empolyee) {
-		// TODO Auto-generated method stub
-		return null;
+	public List<Empolyee> getall() {
+		List<Empolyee> findAll = repositary.findAll();
+		return findAll;
 	}
 
 	@Override
