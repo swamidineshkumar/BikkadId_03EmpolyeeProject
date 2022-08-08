@@ -14,8 +14,10 @@ import com.example.demo.Service.ServiceInt;
 
 @RestController
 public class EmpolyeeController {
+	
 @Autowired
 private ServiceInt serviceInt;
+
 @PostMapping(value="/save",consumes = "application/json",produces = "application/json")
 public ResponseEntity<String> saveDate(@RequestBody Empolyee empolyee){
 	Empolyee savedata = serviceInt.savedata(empolyee);
